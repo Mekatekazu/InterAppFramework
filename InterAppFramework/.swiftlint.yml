@@ -1,0 +1,36 @@
+disabled_rules:
+  - colon
+  - comma
+  - control_statement
+  - trailing_comma
+  - vertical_whitespace
+  - trailing_whitespace
+  - line_length
+opt_in_rules:
+  - empty_count
+  - closing_brace
+  - opening_brace
+  - return_arrow_whitespace
+  - trailing_semicolon
+  - statement_position
+line_length: 110
+cyclomatic_complexity:
+  warning: 40
+  error: 50 
+function_body_length:
+  warning: 150
+  error: 150
+type_body_length:
+  warning: 400
+  error: 800
+function_parameter_count:
+  warning: 15
+  error: 20
+excluded:
+  - Pods
+  - MealCommanderTests
+  - MealCommanderUITests
+  - Podfile
+  - Podfile.lock
+reporter: "xcode"
+warning_threshold: 25
